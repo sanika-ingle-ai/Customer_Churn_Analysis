@@ -1,0 +1,45 @@
+1. Total Customers
+
+Total Customers =
+FORMAT(
+    DISTINCTCOUNT(TelcoCustomerChurn[customerID]),
+    "#,##0"
+)
+
+2. Churned Customers
+
+Churned Customers =
+FORMAT(
+    CALCULATE(
+        COUNTROWS(TelcoCustomerChurn),
+        TelcoCustomerChurn[Churn] = "Yes"
+    ),
+    "#,##0"
+)
+
+3. Retained Customers
+
+Retained Customers =
+FORMAT(
+    CALCULATE(
+        COUNTROWS(TelcoCustomerChurn),
+        TelcoCustomerChurn[Churn] = "No"
+    ),
+    "#,##0"
+)
+
+4. Overall Churn Rate
+
+Overall Churn Rate =
+FORMAT(
+    DIVIDE(
+        CALCULATE(
+            COUNTROWS(TelcoCustomerChurn),
+            TelcoCustomerChurn[Churn] = "Yes"
+        ),
+        COUNTROWS(TelcoCustomerChurn)
+    ),
+    "0.00%"
+)
+
+

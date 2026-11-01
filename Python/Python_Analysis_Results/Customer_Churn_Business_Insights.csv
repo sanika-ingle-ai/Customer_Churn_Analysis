@@ -1,0 +1,11 @@
+Factor,Category,Churn_Rate
+Overall Churn,All Customers,26.54
+Senior Citizens,Senior Citizen,41.68
+Month-to-month Contract,Month-to-month,42.71
+Electronic Check,Electronic Check,45.29
+Fiber Optic Internet,Fiber Optic,41.89
+New Customers,0-12 Months,47.44
+Customers Without Online Security,Online Security: No,41.77
+Customers Without Tech Support,Tech Support: No,41.64
+Customers Without Partners,Partner: No,32.96
+Customers Without Dependents,Dependents: No,31.28
